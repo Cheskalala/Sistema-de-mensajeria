@@ -211,28 +211,50 @@ align-items: center;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.inicio {
+    position: relative;
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-.logo{
-    position: absolute;
-    top: 150px;
-    left: 350px;
-    right: 350px;
-    bottom: 300px;
-    background: #d7b692;
+
+.inicio .block2{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+
+}
+.caja{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px #cb9a79;
-    border-radius: 5px;
+    background: #d7b692;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px #a77541;
+
 }
-.logo img{
-    display:flex ;
-    width: 60%;
-    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
-}
-.texto{
+.inicio .block2 .logo{
+    
     position: relative;
-    top: 400px;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
+    
+}
+
+.texto{
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,7 +277,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 310px;
+    
     
 }
 .parrafo p {
