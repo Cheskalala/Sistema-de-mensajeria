@@ -25,7 +25,7 @@ body {
     position: relative;
     flex: 30%;
     background: white;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.301);
 }
 .container .rightside {
     position: relative;
@@ -121,4 +121,57 @@ body {
     top: 14px;
     font-size: 1.2em;
     cursor: pointer;
+}
+.lista{
+    position: relative;
+    height: calc(100% - 110px); /*  restarle el alto de header y busqueda */
+    overflow-y: auto;
+    
+}
+.lista .block{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+.lista .block .contactoimg{
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+.lista .block .info {
+    position: relative;
+    width: 100%;
+}
+.lista .block .info .nombre {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.lista .block .info .nombre h4 {
+font-size: 1.1em;
+font-weight: 600;
+color: #111;
+
+}
+.mensaje {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.mensaje p {
+    color: #aaa;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
