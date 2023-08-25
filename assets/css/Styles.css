@@ -1,9 +1,10 @@
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Noto Sans', sans-serif;
 }
 body {
     display: flex;
@@ -49,10 +50,35 @@ body {
     height: 60px;
     background: #d7b692;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items: center;
     padding:0 15px;
     
+}
+.header .usuario{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.header.usuario h4 {
+font-size: 1.1em;
+font-weight: 600;
+color: #111;
+}
+.estado{
+    display: flex;
+
+}
+.estado p {
+    color: #111;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .usuarioimg{
     position: relative;
@@ -61,6 +87,7 @@ body {
     overflow: hidden;
     border-radius: 5%;
     cursor: pointer;
+
 }
 .cover {
     position: absolute;
@@ -95,8 +122,17 @@ body {
     align-items: center;
     padding: 0 15px;
 }
+.boton{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    background: #a77541;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 2px #431f07;
+}
 
-.busqueda div 
+/* .busqueda div 
 {
     width: 100%;
 
@@ -121,7 +157,7 @@ body {
     top: 14px;
     font-size: 1.2em;
     cursor: pointer;
-}
+} */
 .lista{
     position: relative;
     height: calc(100% - 110px); /*  restarle el alto de header y busqueda */
@@ -175,3 +211,59 @@ align-items: center;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.logo{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    right: 350px;
+    bottom: 300px;
+    background: #d7b692;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #cb9a79;
+    border-radius: 5px;
+}
+.logo img{
+    display:flex ;
+    width: 60%;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
+}
+.texto{
+    position: relative;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.texto .titulo{
+
+    display: flex;
+    justify-content: center;
+    
+}
+.texto .titulo h2{
+    font-size: 2em;
+    font-weight: 900;
+    color: #111;  
+}
+.parrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 310px;
+    
+}
+.parrafo p {
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.9em;
+
+
+}
+
